@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridServerless.API", "HybridServerless.API\HybridServerless.API.csproj", "{51DD449E-7459-439F-A038-603C5A48F129}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridServerless.Functions", "HybridServerless.Functions\HybridServerless.Functions.csproj", "{EE2E4438-19BE-40D4-A2E5-FA922768B174}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridServerless.Bus", "HybridServerless.Bus\HybridServerless.Bus.csproj", "{CA38B500-2564-49E5-A93E-AF156AE07C64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridServerless.Data", "HybridServerless.Data\HybridServerless.Data.csproj", "{81B2D664-43A7-494A-BC70-B6E55A1A43E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51DD449E-7459-439F-A038-603C5A48F129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DD449E-7459-439F-A038-603C5A48F129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DD449E-7459-439F-A038-603C5A48F129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DD449E-7459-439F-A038-603C5A48F129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE2E4438-19BE-40D4-A2E5-FA922768B174}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE2E4438-19BE-40D4-A2E5-FA922768B174}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE2E4438-19BE-40D4-A2E5-FA922768B174}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE2E4438-19BE-40D4-A2E5-FA922768B174}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA38B500-2564-49E5-A93E-AF156AE07C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA38B500-2564-49E5-A93E-AF156AE07C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA38B500-2564-49E5-A93E-AF156AE07C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA38B500-2564-49E5-A93E-AF156AE07C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B2D664-43A7-494A-BC70-B6E55A1A43E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B2D664-43A7-494A-BC70-B6E55A1A43E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B2D664-43A7-494A-BC70-B6E55A1A43E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B2D664-43A7-494A-BC70-B6E55A1A43E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B20E1C6-E53F-4930-93C7-48A336CAB417}
+	EndGlobalSection
+EndGlobal
