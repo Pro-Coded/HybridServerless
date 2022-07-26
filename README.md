@@ -1,1 +1,3 @@
 # HybridServerless
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/72c35f2824684eacb0bb75a3e3a80dad)](https://www.codacy.com/gh/Pro-Coded/pro-hybrid-serverless/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Pro-Coded/pro-hybrid-serverless&amp;utm_campaign=Badge_Grade)
