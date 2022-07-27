@@ -1,0 +1,3 @@
+﻿name: pro-hybrid-serverless
+runtime: dotnet
+description: A sample demonstrating a hybrid WebAPI and Serverless approach on Azure.
