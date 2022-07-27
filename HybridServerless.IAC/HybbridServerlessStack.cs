@@ -97,24 +97,8 @@ public class HybbridServerlessStack : Stack
                 { "FUNCTIONS_EXTENSION_VERSION", "~4" },
                 { "FUNCTIONS_WORKER_RUNTIME", "dotnet-isolated" },
                 { "APPINSIGHTS_INSTRUMENTATIONKEY", appInsights.InstrumentationKey },
-                { "ServiceBusConnectionString", serviceBusNamespace.DefaultPrimaryKey },
+                { "ServiceBusConnectionString", serviceBusNamespace.DefaultPrimaryConnectionString },
                 { "MessageQueueName", queue.Name }
-                
-                //{ "SERVICEBUS_NAMESPACE", serviceBusNamespace.Name },
-                //{ "SERVICEBUS_ACCESS_KEY", serviceBusNamespace.DefaultPrimaryKey },
-                //{ "SERVICEBUS_QUEUE_NAME", queue.Name },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT", queue.PrimaryEndpoint },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_POLICY", "Send" },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_MODE", "Send" },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_KEY", serviceBusNamespace.PrimaryConnectionString },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_SCHEME", "ServiceBus" },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_AUTHORIZATION_MODE", "Send" },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_SHARED_ACCESS_POLICY", "Send" },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_SHARED_ACCESS_POLICY_NAME", "Send" },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_SHARED_ACCESS_POLICY_RIGHTS", "Send" },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_SHARED_ACCESS_POLICY_SECURITY_KEY", serviceBusNamespace.PrimaryConnectionString },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_SHARED_ACCESS_POLICY_SECURITY_SCHEME", "ServiceBus" },
-                //{ "SERVICEBUS_QUEUE_ENDPOINT_SECURITY_SHARED_ACCESS_POLICY_SECURITY_AUTHORIZATION_MODE", "Send" },                
             },
             ConnectionStrings = new InputList<FunctionAppConnectionStringArgs>
             {
@@ -123,12 +107,15 @@ public class HybbridServerlessStack : Stack
         });
 
         Url = Output.Format($"https://{functionApp.DefaultHostname}/api/Function1");
-
+        ServiceBusConnectionString = serviceBusNamespace.DefaultPrimaryConnectionString;
         QueueName = queue.Name;
     }
 
     [Output]
     public Output<string> Url { get; set; }
+
+    [Output]
+    public Output<string> ServiceBusConnectionString { get; set; }
 
     [Output]
     public Output<string> QueueName { get; set; }
