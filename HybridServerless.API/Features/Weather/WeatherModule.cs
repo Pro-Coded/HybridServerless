@@ -6,7 +6,6 @@ public class WeatherModule : IModule
 {
     public IServiceCollection RegisterModule(IServiceCollection services)
     {
-        //services.AddSingleton(new WeatherServiceConfig());
         _ = services.AddScoped<IWeatherService, WeatherService>();
 
         return services;
